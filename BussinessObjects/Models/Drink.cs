@@ -7,6 +7,7 @@ namespace BussinessObjects.Models
     {
         public Drink()
         {
+            
             DrinkToppings = new HashSet<DrinkTopping>();
         }
 
@@ -22,6 +23,7 @@ namespace BussinessObjects.Models
         public bool? IsDeleted { get; set; }
 
         public virtual Category? Category { get; set; }
+       
         public virtual ICollection<DrinkTopping> DrinkToppings { get; set; }
     }
 }
